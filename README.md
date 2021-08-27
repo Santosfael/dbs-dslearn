@@ -27,8 +27,8 @@ Link showing how to import the project into IntellijIDE: Site JetBrains [import_
     - [x] Role
     - [x] User
     - [x] Section
+    - [x] Enrollment
     - [ ] Lesson
-    - [ ] Enrollment
     - [ ] Deliver
     - [ ] Taks
     - [ ] Content
