@@ -31,7 +31,9 @@ Link showing how to import the project into IntellijIDE: Site JetBrains [import_
     - [x] Lesson
     - [x] Content
     - [x] Taks
-    - [ ] Deliver
+    - [x] Deliver
+    - [x] Topic
+    - [x] Reply
     * Enums
         - [x] ResourceType
-        - [ ] DeliverStatus
+        - [x] DeliverStatus

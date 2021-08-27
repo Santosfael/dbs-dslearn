@@ -4,7 +4,9 @@ import com.rafael.dslearndbs.entities.pk.EnrollmentPK;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -24,6 +26,9 @@ public class Enrollment {
 
     @ManyToMany(mappedBy = "enrollmentsDone")
     private Set<Lesson> lessonsDone = new HashSet<>();
+
+    @OneToMany(mappedBy = "enrollment")
+    private List<Deliver> deliveries = new ArrayList<>();
 
     public Enrollment() {
     }
@@ -85,5 +90,7 @@ public class Enrollment {
         this.onlyUpdate = onlyUpdate;
     }
 
-
+    public List<Deliver> getDeliveries() {
+        return deliveries;
+    }
 }

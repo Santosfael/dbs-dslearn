@@ -1,4 +1,4 @@
-package com.rafael.dslearndbs.entities.pk;
+package com.rafael.dslearndbs.entities;
 
 import com.rafael.dslearndbs.entities.Lesson;
 import com.rafael.dslearndbs.entities.Section;
