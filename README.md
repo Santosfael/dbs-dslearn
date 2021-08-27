@@ -28,10 +28,10 @@ Link showing how to import the project into IntellijIDE: Site JetBrains [import_
     - [x] User
     - [x] Section
     - [x] Enrollment
-    - [ ] Lesson
+    - [x] Lesson
+    - [x] Content
+    - [x] Taks
     - [ ] Deliver
-    - [ ] Taks
-    - [ ] Content
     * Enums
         - [x] ResourceType
         - [ ] DeliverStatus
