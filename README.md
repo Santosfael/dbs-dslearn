@@ -32,6 +32,6 @@ Link showing how to import the project into IntellijIDE: Site JetBrains [import_
     - [ ] Deliver
     - [ ] Taks
     - [ ] Content
-    * Enuns
+    * Enums
         - [x] ResourceType
         - [ ] DeliverStatus
