@@ -19,21 +19,6 @@ Link showing how to import the project into IntellijIDE: Site JetBrains [import_
 
 ### O que já foi implementado ou será implementado.
 
-* Entities
-    - [x] Course
-    - [x] Nofitication
-    - [x] Offer
-    - [x] Resource
-    - [x] Role
-    - [x] User
-    - [x] Section
-    - [x] Enrollment
-    - [x] Lesson
-    - [x] Content
-    - [x] Taks
-    - [x] Deliver
-    - [x] Topic
-    - [x] Reply
-    * Enums
-        - [x] ResourceType
-        - [x] DeliverStatus
+- [x] Entities
+    - [x] Enums
+- [x] Repositories
