@@ -22,3 +22,9 @@ Link showing how to import the project into IntellijIDE: Site JetBrains [import_
 - [x] Entities
     - [x] Enums
 - [x] Repositories
+- [x] Config Aouth2
+- [x] Custom Exception Service
+- [x] Custom Exception Resource
+- [ ] Class DTO
+- [ ] Services
+- [ ] Resources
