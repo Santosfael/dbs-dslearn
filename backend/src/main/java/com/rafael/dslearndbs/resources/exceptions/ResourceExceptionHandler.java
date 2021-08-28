@@ -3,7 +3,9 @@ package com.rafael.dslearndbs.resources.exceptions;
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
 import com.rafael.dslearndbs.services.exceptions.DatabaseException;
+import com.rafael.dslearndbs.services.exceptions.ForbiddenException;
 import com.rafael.dslearndbs.services.exceptions.ResourceNotFoundException;
+import com.rafael.dslearndbs.services.exceptions.UnauthorizedException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -62,6 +64,20 @@ public class ResourceExceptionHandler {
         }
 
         return ResponseEntity.status(status).body(err);
+    }
+
+    @ExceptionHandler(ForbiddenException.class)
+    public ResponseEntity<OAuthCustomError> forbidden(ForbiddenException e, HttpServletRequest request) {
+        HttpStatus status = HttpStatus.FORBIDDEN;
+        OAuthCustomError error = new OAuthCustomError("Forbidden", e.getMessage());
+        return ResponseEntity.status(status).body(error);
+    }
+
+    @ExceptionHandler(UnauthorizedException.class)
+    public ResponseEntity<OAuthCustomError> unauthorized(UnauthorizedException e, HttpServletRequest request) {
+        HttpStatus status = HttpStatus.UNAUTHORIZED;
+        OAuthCustomError error = new OAuthCustomError("Unauthorized", e.getMessage());
+        return ResponseEntity.status(status).body(error);
     }
 
     @ExceptionHandler(AmazonServiceException.class)
